@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.bac{
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(./nut\ bc.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+   text-shadow: 100%;
+    justify-content: center;
+     margin-top: 10%;
+     margin-left: 10%;
+     font-size: 100px;
+     font-weight: 100%;
+     text-decoration: solid;    
+     transform: translateY(-100vh);
+    animation: fall 3.5s forwards;
+   
+
+}
+@keyframes fall{
+    100%{
+        transform : translateX(0);
+    }
+}
+
+.btn{
+    margin-left: 45%;
+   
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(63, 57, 57);
+    width: 180px;
+    padding: 20px;
+    text-decoration:brown;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ll{
+    width: 10%;
+    margin-left: 5%;
+    margin-top: -50%;
+    border-radius: 10px;
+}
+.btn:hover{
+    color:aqua;
+}
+#para{
+    color:beige;
+    margin-left: 20%;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 9%;
+}
+@media screen and (max-width:520px){
+    h1{
+       
+       font-size: 30px;
+       margin-top: 50%;
+       margin-left: 21%;
+
+    }
+    .ll{
+        width: 160px;
+        margin-left: 3%;
+        display: flex;
+    }
+    #para{
+        
+        margin-left:5%;
+        margin-top: 45%;
+    }
+    .btn{
+        margin-top: 120%;
+        margin-left: 40%;
+        margin-bottom: 10%;
+    }
+    .logo{
+        margin-top: 60%;
+    }
+
+}
+.search{
+    
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+   
+    
+}
+input{
+    
+    background-color: rgb(191, 210, 210);
+    border: 3px solid #000;
+    height: 40px;
+    width: 300px;
+    border-radius: 60px;
+    padding: 0px 10px;
+}
+.sea{
+    margin-top: -10%;
+    margin-left: 80%;
+   
+}
+.lo{
+    margin-left: -50%;
+}
+.but{
+    margin-left: -50%;
+}
+@media screen and (max-width:520px){
+
+    .search{
+       margin-top: -33%;
+    }
+
+}

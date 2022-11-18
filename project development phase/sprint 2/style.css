@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+#navbar{
+    position:sticky;
+    top: 0;
+    left:0;
+    z-index: 100;
+    padding: .5rem .5rem;
+    box-shadow: 5px 5px 10px rgb(0,0,.5);
+    background-color: rgba(7, 7, 7, 0.785) ;
+    word-spacing: 50%;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 800;
+    color: coral !important;
+}
+
+#navbarSupportedContent a{
+    border-bottom: 3px solid transparent;
+
+
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid;
+    color: aqua;
+
+}
+#navbarSupportedContent button{
+    background: rgb(223, 228, 228);
+    margin-right: 10%;
+    border-radius: 10px;
+}
+#navbarSupportedContent button:hover{
+    background-color: rgb(22, 220, 144);
+    transition:.10s;
+    border-radius: 10px;
+
+}
+#home{
+    overflow: hidden;
+    background-image : linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./87424821-vector-concept-or-conceptual-abstract-word-cloud-on-black-background-as-metaphor-for-health-nutritio.webp");
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+    height: 91vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    }
+    @media screen and (max-width:520px) {
+    #home{
+        height: 92vh;
+        width: 100%;
+        background-attachment: fixed ;
+    
+}}
+.reg{
+    width: 320px;
+    height: 390px;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,5)),url(./DRY-FRUITS-NUTS-front.jpg);
+    color: #fff;
+    top: 70%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:border-box;
+    overflow: hidden;
+}
+.reg::before{
+    content: '';
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width: 320px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,rgb(218, 208, 32),rgb(218, 208, 32));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+
+}
+.reg::after{
+    content: '';
+    position: absolute;
+    top:-50%;
+    left:-50%;
+    width: 320px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,rgb(218, 208, 32),rgb(218, 208, 32));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+    
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.form {
+    color: #ccc;
+    justify-content: center;
+    position: absolute;
+    inset: 2px;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,3)),url(./DRY-FRUITS-NUTS-front.jpg);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    
+    
+}
+#home h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 50px;
+    text-shadow: 0px 1px 0px #ccc,
+                    0px 1px 0px #ccc,
+                    0px 1px 0px #ccc,
+                    0px 1px 0px #ccc,
+                    0px 1px 0px #ccc,
+                    0px 1px 0px #ccc,
+                    0px 1px 0px #ccc;
+
+
+
+}
+@media screen and (max-width:520px)
+{
+    #home h1{
+        margin-top: 30%;
+        font-size:30px;
+        justify-content: center;
+        letter-spacing: 3px;
+       
+
+    }
+}
+.log h2{
+    color:#AED6F1;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10%;
+    text-shadow: 0px 1px 0px rgb(7, 7, 7),
+                    0px 1px 0px rgb(6, 6, 6),
+                    0px 1px 0px rgb(10, 9, 9),
+                    0px 1px 0px rgb(14, 13, 13),
+                    0px 1px 0px rgb(16, 16, 16),
+                    0px 1px 0px rgb(10, 10, 10),
+                    0px 1px 0px rgb(9, 9, 9),
+                    0px 1px 0px rgb(11, 11, 11);
+}
+#name{
+    margin-top: 20%;
+    margin-left: 10%;
+    background:transparent;
+    border-radius: 10px;
+    color: antiquewhite;
+
+    }
+    #passwo{
+        background:transparent;
+        border-radius: 20px;
+        margin-left: 10%;
+    }
+    #button{
+        border-radius: 10px;
+        padding: 10px 20px;
+        background: #ccc;
+        color: rgb(10, 11, 11);
+        margin-top: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 10%;
+        margin-left: 28%;
+    }
+    #button:hover{
+        background-color: #AED6F1;
+    }

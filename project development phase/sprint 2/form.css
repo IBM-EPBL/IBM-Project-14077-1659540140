@@ -1,0 +1,133 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url("https://imgs.search.brave.com/1J2Me80pWrq2gUYdlm2fRmQeEqWdh0IfsC5ekTbzKfA/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly9pbWFn/ZXM3LmFscGhhY29k/ZXJzLmNvbS8zNDEv/MzQxMjI1LmpwZw");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container{
+    width: 100%;
+    height:65vh;
+    max-width: 650px;
+    background: rgba(0,0,0,0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 2px white;
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px rgb(14, 14, 14);
+    border-bottom: solid 1px white;
+
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width: 40%;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width: 40%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.gender-title{
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.gender-category{
+    margin: 15px 0;
+    color: aliceblue;
+
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-button input{
+    display: block;
+    width: 108%;
+    margin-top: -2%;
+    margin-left: -4%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: aliceblue;
+    background: rgb(222, 132, 132);
+}
+.form-submit-button input:hover{
+    background: rgba(0,0,0,0.5);
+    color: aliceblue;
+}
+@media(max-width: 600px){
+    .container{
+        max-width: 280px;
+        
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+
+    }
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+
+
+    }
+    .main-user-info::-webkit-scrollbar{
+        width: 0%;
+    }
+
+}
